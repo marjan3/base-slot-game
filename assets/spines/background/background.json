@@ -1,0 +1,19 @@
+{
+"skeleton": { "hash": "guecskDzoMBPpcu0ZlEyUJxROBc", "spine": "3.7.94", "width": 0, "height": 0, "images": "C:/Users/marjan.tanevski/OneDrive - NetEnt AB (publ)/Desktop/spine/images", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "background", "bone": "root", "attachment": "background" }
+],
+"skins": {
+	"default": {
+		"background": {
+			"background": { "width": 1920, "height": 1080 }
+		}
+	}
+},
+"animations": {
+	"animation": {}
+}
+}

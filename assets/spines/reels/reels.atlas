@@ -1,0 +1,13 @@
+
+reels.png
+size: 240,682
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+reel
+  rotate: false
+  xy: 2, 2
+  size: 236, 678
+  orig: 236, 678
+  offset: 0, 0
+  index: -1

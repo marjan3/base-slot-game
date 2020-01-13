@@ -1,0 +1,7 @@
+{
+  "action": "spin",
+  "bet": {
+    "value": 123012312.123123,
+    "currency": "EUR"
+  }
+}

@@ -1,0 +1,40 @@
+{
+"skeleton": { "hash": "qkLqPpBtEI9ad6H5h1/2jKnGhmE", "spine": "3.7.94", "width": 0, "height": 0, "images": "C:/Users/marjan.tanevski/OneDrive - NetEnt AB (publ)/Desktop/spine/images", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "reel3", "parent": "root" },
+	{ "name": "reel2", "parent": "root", "x": -250 },
+	{ "name": "reel1", "parent": "root", "x": -500 },
+	{ "name": "reel4", "parent": "root", "x": 250 },
+	{ "name": "reel5", "parent": "root", "x": 500 }
+],
+"slots": [
+	{ "name": "reel1", "bone": "reel1", "attachment": "reel" },
+	{ "name": "reel2", "bone": "reel2", "attachment": "reel" },
+	{ "name": "reel3", "bone": "reel3", "attachment": "reel" },
+	{ "name": "reel4", "bone": "reel4", "attachment": "reel" },
+	{ "name": "reel5", "bone": "reel5", "attachment": "reel" }
+],
+"skins": {
+	"default": {
+		"reel1": {
+			"reel": { "width": 236, "height": 678 }
+		},
+		"reel2": {
+			"reel": { "width": 236, "height": 678 }
+		},
+		"reel3": {
+			"reel": { "width": 236, "height": 678 }
+		},
+		"reel4": {
+			"reel": { "width": 236, "height": 678 }
+		},
+		"reel5": {
+			"reel": { "width": 236, "height": 678 }
+		}
+	}
+},
+"animations": {
+	"animation": {}
+}
+}

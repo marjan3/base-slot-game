@@ -1,0 +1,20 @@
+{
+"skeleton": { "hash": "9NOGeRB96X8dc2HKQUQ/Iu+/V2o", "spine": "3.7.94", "width": 212, "height": 96, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -239.02, "y": 184.72 }
+],
+"slots": [
+	{ "name": "images/logo", "bone": "bone", "attachment": "images/logo" }
+],
+"skins": {
+	"default": {
+		"images/logo": {
+			"images/logo": { "x": -542.19, "y": 249.62, "width": 212, "height": 96 }
+		}
+	}
+},
+"animations": {
+	"idle": {}
+}
+}

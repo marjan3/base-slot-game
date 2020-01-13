@@ -1,0 +1,34 @@
+
+intro.png
+size: 2148,1084
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/continueText
+  rotate: true
+  xy: 1924, 8
+  size: 464, 68
+  orig: 464, 68
+  offset: 0, 0
+  index: -1
+images/introBackground
+  rotate: false
+  xy: 2, 2
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+images/loading
+  rotate: true
+  xy: 1924, 474
+  size: 608, 110
+  orig: 608, 110
+  offset: 0, 0
+  index: -1
+images/loadingBar
+  rotate: true
+  xy: 2036, 474
+  size: 608, 110
+  orig: 608, 110
+  offset: 0, 0
+  index: -1

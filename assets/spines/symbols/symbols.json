@@ -1,0 +1,98 @@
+{
+"skeleton": { "hash": "CZUiwcC8n00ZhjN19PFJlQvGzWM", "spine": "3.7.94", "width": 200, "height": 200, "images": "./images/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "symbol", "parent": "root" }
+],
+"slots": [
+	{ "name": "symbolSkin", "bone": "symbol", "attachment": "symbolSkin" }
+],
+"skins": {
+	"default": {},
+	"sym1": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "sym1", "width": 200, "height": 200 }
+		}
+	},
+	"sym2": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "sym2", "x": 0.5, "y": 0.5, "width": 201, "height": 201 }
+		}
+	},
+	"sym3": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "sym3", "x": 0.5, "width": 201, "height": 200 }
+		}
+	},
+	"sym4": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "sym4", "y": 0.5, "width": 200, "height": 201 }
+		}
+	},
+	"sym5": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "symPremium1", "width": 200, "height": 200 }
+		}
+	},
+	"sym6": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "symPremum2", "x": 0.5, "width": 201, "height": 200 }
+		}
+	},
+	"sym7": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "symPremium3", "x": 0.5, "y": 0.5, "width": 201, "height": 201 }
+		}
+	},
+	"sym8": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "symPremium4", "x": 0.5, "y": 0.5, "width": 201, "height": 201 }
+		}
+	},
+	"sym9": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "symExtraPremium", "x": 0.5, "width": 201, "height": 200 }
+		}
+	},
+	"sym10": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "symWild", "x": 0.5, "y": 0.5, "width": 201, "height": 201 }
+		}
+	},
+	"sym11": {
+		"symbolSkin": {
+			"symbolSkin": { "name": "symScatter", "x": 0.5, "y": 0.5, "width": 201, "height": 201 }
+		}
+	}
+},
+"animations": {
+	"idle": {},
+	"noWin": {
+		"slots": {
+			"symbolSkin": {
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.1667, "color": "ffffffd2" },
+					{ "time": 0.5, "color": "ffffff7d" },
+					{ "time": 0.6667, "color": "ffffffa2" },
+					{ "time": 0.8333, "color": "ffffff51" },
+					{ "time": 2.9667, "color": "ffffffff" }
+				]
+			}
+		}
+	},
+	"win": {
+		"bones": {
+			"root": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.1667, "x": 1.2, "y": 1.2 },
+					{ "time": 0.3333, "x": 1.3, "y": 1.3 },
+					{ "time": 0.5, "x": 1.1, "y": 1.1 },
+					{ "time": 0.6667, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

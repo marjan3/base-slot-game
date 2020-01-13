@@ -1,0 +1,51 @@
+{
+  "game": "spinningReels",
+  "win": {
+    "wins": [
+      {
+        "positions": [
+          "1,2",
+          "1,2"
+        ],
+        "money": {
+          "value": 123123.3,
+          "currency": "EUR"
+        }
+      },
+      {
+        "positions": [
+          "3,2",
+          "5,2"
+        ],
+        "money": {
+          "value": 123123.3,
+          "currency": "EUR"
+        }
+      }
+    ],
+    "total": {
+      "value": 123123.3,
+      "currency": "EUR"
+    }
+  },
+  "symbols": [
+    [
+      {
+        "reel0": "S1,S1,S2,S3,S4,S5"
+      },
+      {
+        "reel1": "S1,S1,S2,S3,S4,S5"
+      },
+      {
+        "reel2": "S1,S1,S2,S3,S4,S5"
+      },
+      {
+        "reel3": "S1,S1,S2,S3,S4,S5"
+      }
+    ]
+  ],
+  "balance": {
+    "value": 12312123.123,
+    "currency": "EUR"
+  }
+}

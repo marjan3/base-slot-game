@@ -1,0 +1,83 @@
+
+symbols.png
+size: 205,2232
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sym1
+  rotate: false
+  xy: 2, 204
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+sym2
+  rotate: false
+  xy: 2, 1826
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+sym3
+  rotate: false
+  xy: 2, 1015
+  size: 201, 200
+  orig: 201, 200
+  offset: 0, 0
+  index: -1
+sym4
+  rotate: false
+  xy: 2, 812
+  size: 200, 201
+  orig: 200, 201
+  offset: 0, 0
+  index: -1
+symExtraPremium
+  rotate: true
+  xy: 2, 609
+  size: 201, 200
+  orig: 201, 200
+  offset: 0, 0
+  index: -1
+symPremium1
+  rotate: false
+  xy: 2, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+symPremium3
+  rotate: false
+  xy: 2, 1623
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+symPremium4
+  rotate: false
+  xy: 2, 1420
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+symPremum2
+  rotate: true
+  xy: 2, 406
+  size: 201, 200
+  orig: 201, 200
+  offset: 0, 0
+  index: -1
+symScatter
+  rotate: false
+  xy: 2, 2029
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+symWild
+  rotate: false
+  xy: 2, 1217
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1

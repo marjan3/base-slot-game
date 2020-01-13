@@ -1,0 +1,13 @@
+
+foreground.png
+size: 216,100
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/logo
+  rotate: false
+  xy: 2, 2
+  size: 212, 96
+  orig: 212, 96
+  offset: 0, 0
+  index: -1

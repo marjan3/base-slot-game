@@ -1,12 +1,8 @@
 # Base Slot Game
 
-> **Base Slot Game** is a video slot game. Its using spine for animations and pixi for rendering. The code is structured in a way that is open for extension.
+> **Base Slot Game** is a base video slot game. Can be used to create a video slot game. Its using spine for animations and pixi for rendering. The code is structured & organized to be open for extension.
 
 ![Image](screenshot1.png)
-
-## Getting started
-
-To get a local copy up and running follow these simple example steps.
 
 ## Built with
 
@@ -20,13 +16,17 @@ To get a local copy up and running follow these simple example steps.
 - Babel
 - Webpack
 
-## Install
+## Getting started
+
+To get a local copy up and running follow these simple example steps.
+
+### Install
 
 ```sh
 $ yarn
 ```
 
-## Build Development
+### Build Development
 
 ```sh
 $ yarn build
@@ -49,6 +49,7 @@ $ yarn serve
 ## Future changes
 
 - Improve usability
+- Audio
 
 ## Contact
 

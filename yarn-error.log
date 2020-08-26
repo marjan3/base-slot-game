@@ -1,36 +1,41 @@
 Arguments: 
-  /home/marjan/.nvm/versions/node/v10.15.0/bin/node /usr/share/yarn/bin/yarn.js
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add -D loader-options-plugin
 
 PATH: 
-  /home/marjan/.nvm/versions/node/v10.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/c/Users/marjan.tanevski/Personal/github/type-script-prototypes/base-slot-pixijs-typescript-tweener/node_modules/.bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/ProgramData/DockerDesktop/version-bin:/c/Program Files/Docker/Docker/Resources/bin:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/c/WINDOWS/System32/OpenSSH/:/c/Program Files/apache-maven-3.5.4/bin/:/c/Program Files/Java/jdk1.8.0_211/bin/:/c/HashiCorp/Vagrant/bin:/c/Program Files (x86)/Microsoft SQL Server/Client SDK/ODBC/130/Tools/Binn/:/c/Program Files (x86)/Microsoft SQL Server/140/Tools/Binn/:/c/Program Files (x86)/Microsoft SQL Server/140/DTS/Binn/:/c/Program Files (x86)/Microsoft SQL Server/140/Tools/Binn/ManagementStudio/:/c/Program Files/PuTTY/:/c/ProgramData/chocolatey/bin:/c/PROGRA~2/Groovy/Groovy-3.0.0/bin:/c/Program Files/nodejs/:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Git/cmd:/c/Program Files/Git LFS:/c/Program Files (x86)/Yarn/bin/:/c/Users/marjan.tanevski/scoop/shims:/c/Users/marjan.tanevski/AppData/Local/Programs/Python/Python37-32/Scripts/:/c/Users/marjan.tanevski/AppData/Local/Programs/Python/Python37-32/:/c/Users/marjan.tanevski/AppData/Local/Microsoft/WindowsApps:/c/Users/marjan.tanevski/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/marjan.tanevski/AppData/Local/Programs/Fiddler:/c/Program Files/JetBrains/IntelliJ IDEA 2018.3.2/bin:/c/Program Files/JetBrains/WebStorm 2019.1/bin:/c/Program Files/JetBrains/PyCharm Community Edition 2019.1.1/bin:/c/Users/marjan.tanevski/AppData/Local/hyper/pixi-3.0.2/resources/bin:/c/Users/marjan.tanevski/AppData/Local/Microsoft/WindowsApps:/c/Users/marjan.tanevski/AppData/Roaming/npm:/c/Program Files/JetBrains/WebStorm 2019.2.4/bin:/c/Users/marjan.tanevski/AppData/Local/atom/bin:/c/Users/marjan.tanevski/AppData/Local/Yarn/bin:/snap/bin:/home/marjan/.yarn/bin:/opt/yarn-[version]/bin
+  C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\marjan.tanevski\AppData\Local\Microsoft\WindowsApps;C:\Users\marjan.tanevski\AppData\Roaming\npm;C:\Users\marjan.tanevski\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\marjan.tanevski\AppData\Local\Yarn\bin
 
 Yarn version: 
-  1.15.2
+  1.19.2
 
 Node version: 
-  10.15.0
+  10.16.0
 
 Platform: 
-  linux x64
+  win32 x64
 
 Trace: 
-  SyntaxError: /c/Users/marjan.tanevski/Personal/github/type-script-prototypes/base-slot-pixijs-typescript-tweener/package.json: Unexpected token } in JSON at position 1414
-      at JSON.parse (<anonymous>)
-      at /usr/share/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/usr/share/yarn/lib/cli.js:304:30)
-      at /usr/share/yarn/lib/cli.js:315:13
+  Error: https://registry.yarnpkg.com/loader-options-plugin: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66036:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140586:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141558:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141480:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
 
 npm manifest: 
   {
-    "name": "base-slot-example",
+    "name": "base-slot-game",
     "version": "1.0.0",
-    "description": "An Example of Base Slot Game",
+    "description": "Base Slot Game",
     "private": true,
     "scripts": {
-      "build:dev": "webpack --config webpack.dev.js",
-      "watch:dev": "webpack --config webpack.dev.js --watch --info-verbosity verbose",
-      "serve:dev": "webpack --config webpack.dev.js --info-verbosity verbose && node_modules/.bin/webpack-dev-server"
+      "build": "webpack --config webpack.dev.js",
+      "watch": "webpack --config webpack.dev.js --watch --info-verbosity verbose",
+      "serve": "webpack-dev-server --hot"
     },
     "keywords": [
       "typescript",
@@ -39,40 +44,34 @@ npm manifest:
     "author": "marjantanevski@outlook.com",
     "license": "MIT",
     "dependencies": {
-      "pixi-spine": "^1.5.19",
-      "pixi.js": "^4.8.2",
-      "@mtanevski/slot-ui": "0.0.5",
+      "@mtanevski/tweener": "0.0.8",
+      "@mtanevski/slot-ui": "0.0.8",
       "babel-polyfill": "^6.26.0",
       "dat.gui": "^0.7.6",
+      "pixi-spine": "^1.5.19",
+      "pixi.js": "^4.8.2",
       "webfontloader": "^1.6.28",
       "xstate": "^4.6.7"
     },
     "devDependencies": {
-  
-      "@types/pixi.js": "^4.8.4",
       "@types/dat.gui": "^0.7.5",
       "@types/node": "^12.12.17",
-  
+      "@types/pixi.js": "^4.8.4",
+      "@webpack-cli/init": "^0.1.2",
       "babel-core": "^6.26.3",
       "babel-loader": "^7.1.5",
       "babel-plugin-syntax-dynamic-import": "^6.18.0",
       "babel-preset-env": "^1.7.0",
-  
-      "typescript": "^3.1.6",
-  
-      "webpack": "^4.25.1",
-      "@webpack-cli/init": "^0.1.2",
-      "webpack-cli": "^3.1.2",
-      "webpack-dev-server": "^3.2.1",
-  
+      "css-loader": "^1.0.1",
+      "file-loader": "^5.0.2",
+      "copy-webpack-plugin": "^4.6.0",
+      "html-webpack-plugin": "^3.2.0",
       "style-loader": "^0.23.1",
       "ts-loader": "^5.3.0",
-      "html-webpack-plugin": "^3.2.0",
-      "replace-in-file-webpack-plugin": "^1.0.6",
-      "uglifyjs-webpack-plugin": "^2.0.1",
-      "copy-webpack-plugin": "^4.6.0",
-      "css-loader": "^1.0.1",
-  
+      "typescript": "^3.1.6",
+      "webpack": "^4.25.1",
+      "webpack-cli": "^3.1.2",
+      "webpack-dev-server": "^3.2.1"
     }
   }
 
@@ -999,10 +998,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@mtanevski/observable/-/observable-0.0.3.tgz#425c5c27c23618126151b2956e02f9bcf7597c93"
     integrity sha512-FaYXMEwJO+KNIH1c4ajKIovC7J3RnuSR5dr8+BcUt3hcQu4ICzMSOAnkn/bA7q1DwY8VIgV6C4lxErDojRFCcg==
   
-  "@mtanevski/slot-ui@0.0.5":
-    version "0.0.5"
-    resolved "https://registry.yarnpkg.com/@mtanevski/slot-ui/-/slot-ui-0.0.5.tgz#17c7158ebebf07174f55ed46a5198b15abd4c16f"
-    integrity sha512-PVXnCji0oqdEVdqeq+7CvPYL+UoXypT3fFVPqHFk/5hQWvLdPFDpzL+rhk06l9rJlamhxwOX2dAC+5WqHRDL9w==
+  "@mtanevski/slot-ui@0.0.8":
+    version "0.0.8"
+    resolved "https://registry.yarnpkg.com/@mtanevski/slot-ui/-/slot-ui-0.0.8.tgz#53aa1148489be0aa0efd16515e193414df7a4378"
+    integrity sha512-GE+vhchPTEKH6eF7ae6Q8nqW58ZnvBd3kuxwkpV3xf9dmNjcAD1SrDDRq15t/50U1Sp40ErN2fWfuI8vuiiWZA==
     dependencies:
       "@mdi/font" "^3.6.95"
       "@mtanevski/observable" "^0.0.3"
@@ -1010,6 +1009,11 @@ Lockfile:
       roboto-fontface "*"
       vue "^2.6.10"
       vuetify "^2.1.0"
+  
+  "@mtanevski/tweener@0.0.8":
+    version "0.0.8"
+    resolved "https://registry.yarnpkg.com/@mtanevski/tweener/-/tweener-0.0.8.tgz#7406b50f4b48a30f6e3e85700ff39925983991b7"
+    integrity sha512-23Fkh91UQhJnbERNgbntxKcmUe0rQsHrEG8rLSgBc6td26oQ6ETaarGJOV/hkqc7+I2xEFX9GBk57dPCYYy78A==
   
   "@nodelib/fs.stat@^1.1.2":
     version "1.1.3"
@@ -4256,6 +4260,14 @@ Lockfile:
     integrity sha1-OrGi0qYsi/tDGgyUy3l6L84nyWI=
     dependencies:
       escape-string-regexp "^1.0.5"
+  
+  file-loader@^5.0.2:
+    version "5.0.2"
+    resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-5.0.2.tgz#7f3d8b4ac85a5e8df61338cfec95d7405f971caa"
+    integrity sha512-QMiQ+WBkGLejKe81HU8SZ9PovsU/5uaLo0JdTCEXOYv7i7jfAjHZi1tcwp9tSASJPOmmHZtbdCervFmXMH/Dcg==
+    dependencies:
+      loader-utils "^1.2.3"
+      schema-utils "^2.5.0"
   
   file-uri-to-path@1.0.0:
     version "1.0.0"
@@ -8571,11 +8583,6 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
     integrity sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
   
-  replace-in-file-webpack-plugin@^1.0.6:
-    version "1.0.6"
-    resolved "https://registry.yarnpkg.com/replace-in-file-webpack-plugin/-/replace-in-file-webpack-plugin-1.0.6.tgz#eee7e139be967e8e48a0552f73037ed567b54dbd"
-    integrity sha512-+KRgNYL2nbc6nza6SeF+wTBNkovuHFTfJF8QIEqZg5MbwkYpU9no0kH2YU354wvY/BK8mAC2UKoJ7q+sJTvciw==
-  
   request-promise-core@1.1.3:
     version "1.1.3"
     resolved "https://registry.npmjs.org/request-promise-core/-/request-promise-core-1.1.3.tgz#e9a3c081b51380dfea677336061fea879a829ee9"
@@ -8840,6 +8847,14 @@ Lockfile:
       ajv-errors "^1.0.0"
       ajv-keywords "^3.1.0"
   
+  schema-utils@^2.5.0:
+    version "2.6.1"
+    resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.6.1.tgz#eb78f0b945c7bcfa2082b3565e8db3548011dc4f"
+    integrity sha512-0WXHDs1VDJyo+Zqs9TKLKyD/h7yDpHUhEFsM2CzkICFdoX1av+GBq/J2xRTFfsQO5kBfhZzANf2VcIm84jqDbg==
+    dependencies:
+      ajv "^6.10.2"
+      ajv-keywords "^3.4.1"
+  
   scoped-regex@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/scoped-regex/-/scoped-regex-1.0.0.tgz#a346bb1acd4207ae70bd7c0c7ca9e566b6baddb8"
@@ -8891,7 +8906,7 @@ Lockfile:
       range-parser "~1.2.1"
       statuses "~1.5.0"
   
-  serialize-javascript@^1.4.0, serialize-javascript@^1.7.0:
+  serialize-javascript@^1.4.0:
     version "1.9.1"
     resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.9.1.tgz#cfc200aef77b600c47da9bb8149c943e798c2fdb"
     integrity sha512-0Vb/54WJ6k5v8sSWN09S0ora+Hnr+cX40r9F170nT+mSkaxltoE/7R3OrIdBSUv1OoiobH1QoWQbCnAO+e8J1A==
@@ -9724,28 +9739,13 @@ Lockfile:
       commander "~2.19.0"
       source-map "~0.6.1"
   
-  uglify-js@^3.1.4, uglify-js@^3.6.0:
+  uglify-js@^3.1.4:
     version "3.7.2"
     resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.2.tgz#cb1a601e67536e9ed094a92dd1e333459643d3f9"
     integrity sha512-uhRwZcANNWVLrxLfNFEdltoPNhECUR3lc+UdJoG9CBpMcSnKyWA94tc3eAujB1GcMY5Uwq8ZMp4qWpxWYDQmaA==
     dependencies:
       commander "~2.20.3"
       source-map "~0.6.1"
-  
-  uglifyjs-webpack-plugin@^2.0.1:
-    version "2.2.0"
-    resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-2.2.0.tgz#e75bc80e7f1937f725954c9b4c5a1e967ea9d0d7"
-    integrity sha512-mHSkufBmBuJ+KHQhv5H0MXijtsoA1lynJt1lXOaotja8/I0pR4L9oGaPIZw+bQBOFittXZg9OC1sXSGO9D9ZYg==
-    dependencies:
-      cacache "^12.0.2"
-      find-cache-dir "^2.1.0"
-      is-wsl "^1.1.0"
-      schema-utils "^1.0.0"
-      serialize-javascript "^1.7.0"
-      source-map "^0.6.1"
-      uglify-js "^3.6.0"
-      webpack-sources "^1.4.0"
-      worker-farm "^1.7.0"
   
   underscore@~1.6.0:
     version "1.6.0"
@@ -10049,7 +10049,7 @@ Lockfile:
     resolved "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
     integrity sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==
   
-  webpack-cli@^3.3.10:
+  webpack-cli@^3.1.2:
     version "3.3.10"
     resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.3.10.tgz#17b279267e9b4fb549023fae170da8e6e766da13"
     integrity sha512-u1dgND9+MXaEt74sJR4PR7qkPxXUSQ0RXYq8x1L6Jg1MYVEmGPrH6Ah6C4arD4r0J1P5HKjRqpab36k0eIzPqg==

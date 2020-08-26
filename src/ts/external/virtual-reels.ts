@@ -1,13 +1,14 @@
+import { Ease } from '../utils/ease';
+const tw = require('@mtanevski/tweener');
 
-import { Tweener, Tweening } from "@mtanevski/tweener";
-import { Ease } from "../utils/ease";
+const tweener = new tw.tweener.Tweener();
 
 export class VirtualReel {
   position: number;
   previousPosition: number;
   targetPosition: number;
   time: number;
-  tweening: Tweening | null;
+  tweening: any | null;
   speed: number;
 
   constructor() {
@@ -34,7 +35,7 @@ export class VirtualReelArea {
       const virtualReel = new VirtualReel();
       this.virtualReels.push(virtualReel);
     }
-    this.tweener = new Tweener();
+    this.tweener = new tw.tweener.Tweener();
   }
 
   public getReel(reelIndex: number): VirtualReel {
@@ -79,7 +80,7 @@ export class VirtualReelArea {
         .new()
         .tween(
           r,
-          "position",
+          'position',
           target,
           time,
           Ease.backout(0.7),

@@ -24,67 +24,63 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
  */
 
 module.exports = {
-    module: {
-        rules: [
-            {
-                test: /\.ts$/,
-                use: 'ts-loader',
-                exclude: /node_modules/
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    {
-                        loader: 'style-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'css-loader'
-                    }
-                ]
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf|)$/,
-                use: [
-                    'file-loader',
-                ],
-            },
+  module: {
+    rules: [
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'css-loader'
+          }
         ]
-    },
-    entry: path.resolve(__dirname) + "/src/ts/main.ts",
-    /** Telling webpack to extract typescript source maps and include in our final bundle  */
-    devtool: 'inline-source-map',
-    output: {
-        filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
-    },
-    resolve: {
-        extensions: [".tsx", ".ts", ".js"]
-    },
-    mode: 'development',
-    optimization: {
-        splitChunks: {
-            cacheGroups: {
-                vendors: {
-                    priority: -10,
-                    test: /[\\/]node_modules[\\/]/
-                }
-            },
-            chunks: 'async',
-            minChunks: 1,
-            minSize: 30000,
-            name: true
-        }
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: 'assets/index.html'
-        }),
-        new CopyWebpackPlugin([
-            {from: 'assets/spines', to: 'spines'}
-        ]),
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|)$/,
+        use: ['file-loader']
+      }
     ]
-}
+  },
+  entry: path.resolve(__dirname) + '/src/ts/main.ts',
+  /** Telling webpack to extract typescript source maps and include in our final bundle  */
+  devtool: 'source-map',
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
+  },
+  mode: 'development',
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          priority: -10,
+          test: /[\\/]node_modules[\\/]/
+        }
+      },
+      chunks: 'async',
+      minChunks: 1,
+      minSize: 30000,
+      name: true
+    }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'assets/index.html'
+    }),
+    new CopyWebpackPlugin([{ from: 'assets/spines', to: 'spines' }])
+  ]
+};

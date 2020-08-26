@@ -929,10 +929,10 @@
     vue "^2.6.10"
     vuetify "^2.1.0"
 
-"@mtanevski/tweener@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@mtanevski/tweener/-/tweener-0.0.4.tgz#71fb02beca56877c2822817d3870c337552139b2"
-  integrity sha512-E3EZPMZpNss2wa/r4ZPnf90OV9dR7UZ2EpPAG30J1vQ0Q8FKIbANt05FMjGMlaxnHQvxZQcvDNxE9lH7yuer4g==
+"@mtanevski/tweener@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@mtanevski/tweener/-/tweener-0.0.8.tgz#7406b50f4b48a30f6e3e85700ff39925983991b7"
+  integrity sha512-23Fkh91UQhJnbERNgbntxKcmUe0rQsHrEG8rLSgBc6td26oQ6ETaarGJOV/hkqc7+I2xEFX9GBk57dPCYYy78A==
 
 "@nodelib/fs.stat@^1.1.2":
   version "1.1.3"

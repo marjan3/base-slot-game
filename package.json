@@ -15,7 +15,7 @@
   "author": "marjantanevski@outlook.com",
   "license": "MIT",
   "dependencies": {
-    "@mtanevski/tweener": "0.0.4",
+    "@mtanevski/tweener": "0.0.8",
     "@mtanevski/slot-ui": "0.0.8",
     "babel-polyfill": "^6.26.0",
     "dat.gui": "^0.7.6",

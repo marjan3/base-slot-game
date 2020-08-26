@@ -899,10 +899,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@mdi/font@^3.6.95":
-  version "3.9.97"
-  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-3.9.97.tgz#b9f31e05574452e84f57e5b81d34ffd593bc9c29"
-  integrity sha512-yADBl2mzqIssrhLaRvJ2gZPyEQK+fN9uYh/1/cwwuq2lKDx+ITWsOrh1vlHMfw1IICMx9cwBjSoiCf3B8Br8nw==
+"@mdi/font@^5.5.55":
+  version "5.5.55"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-5.5.55.tgz#7f83d640f0692651f5e59558da99975f42114123"
+  integrity sha512-xrVCXiRMz7ubB8mu6ehDhMADmGpLBsk3GWZccs39jWmhoTxatFnOvW8STJjqMGtePPNgGYYu/6m/AJVyMjBxnw==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -912,20 +912,18 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@mtanevski/observable@^0.0.3":
+"@mtanevski/observable@0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@mtanevski/observable/-/observable-0.0.3.tgz#425c5c27c23618126151b2956e02f9bcf7597c93"
   integrity sha512-FaYXMEwJO+KNIH1c4ajKIovC7J3RnuSR5dr8+BcUt3hcQu4ICzMSOAnkn/bA7q1DwY8VIgV6C4lxErDojRFCcg==
 
-"@mtanevski/slot-ui@0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@mtanevski/slot-ui/-/slot-ui-0.0.8.tgz#53aa1148489be0aa0efd16515e193414df7a4378"
-  integrity sha512-GE+vhchPTEKH6eF7ae6Q8nqW58ZnvBd3kuxwkpV3xf9dmNjcAD1SrDDRq15t/50U1Sp40ErN2fWfuI8vuiiWZA==
+"@mtanevski/slot-ui@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@mtanevski/slot-ui/-/slot-ui-0.0.11.tgz#42b6d5eba0f5de55c905a70588350c58420f70fa"
+  integrity sha512-NbxP5seNGj2En6dNJyodGFRoltLro6LCCve0b27yPANtM+Cs2Rf0xN96gWP48Oy/uB5O14HkTLw95WaiNhfbbQ==
   dependencies:
-    "@mdi/font" "^3.6.95"
-    "@mtanevski/observable" "^0.0.3"
+    "@mtanevski/observable" "0.0.3"
     core-js "^3.3.2"
-    roboto-fontface "*"
     vue "^2.6.10"
     vuetify "^2.1.0"
 
@@ -8662,11 +8660,6 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
-
-roboto-fontface@*:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/roboto-fontface/-/roboto-fontface-0.10.0.tgz#7eee40cfa18b1f7e4e605eaf1a2740afb6fd71b0"
-  integrity sha512-OlwfYEgA2RdboZohpldlvJ1xngOins5d7ejqnIBWr9KaMxsnBqotpptRXTyfNRLnFpqzX6sTDt+X+a+6udnU8g==
 
 rsvp@^3.3.3:
   version "3.6.2"

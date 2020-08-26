@@ -1,4 +1,12 @@
-> Typescript Based Slot Game
+# Base Slot Game
+
+> **Base Slot Game** is a video slot game. Its using spine for animations and pixi for rendering. The code is structured in a way that is open for extension.
+
+![Image](screenshot1.png)
+
+## Getting started
+
+To get a local copy up and running follow these simple example steps.
 
 ## Built with
 
@@ -37,6 +45,14 @@ $ yarn serve
 ```
 
 **Open http://localhost:8080 in browser and click on dist/ directory**
+
+## Future changes
+
+- Improve usability
+
+## Contact
+
+For contact, you can reach me at [marjantanevski@outlook.com](marjantanevski@outlook.com).
 
 ## License
 

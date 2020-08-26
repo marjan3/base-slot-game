@@ -1,6 +1,5 @@
 > Typescript Based Slot Game
 
-
 ## Built with
 
 - Node v10.16.0
@@ -10,6 +9,8 @@
 - Spine
 - Pixi.js
 - XState
+- Babel
+- Webpack
 
 ## Install
 
